@@ -1,0 +1,20 @@
+[build-system]
+requires = [
+    "setuptools>=45",
+    "wheel",
+    "scikit-build",
+    "pybind11"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gauss_jordan_package"
+version = "0.1.0"
+description = "A package for Gauss-Jordan impl"
+authors = [{name = "korwunov", email = "korshunov.pa@phystech.edu"}]
+
+[project.optional-dependencies]
+dev = ["build"]
+
+[tool.scikit-build]
+cmake.args = []
